@@ -1,0 +1,84 @@
+
+	<h3> Definicao do Servidor e Base </h3>
+
+	<div id="form">
+	<form action="" method="post">
+		Servidor: <br />
+		<input type="text" name="host" value="{host}" class="text" />
+		<br /><br />
+
+		Usuariosrio: <br />
+		<input type="text" name="user" value="{user}" class="text" />
+		<br /><br />
+
+		Senha: <br />
+		<input type="password" name="pass" value="{pass}" class="text" />
+		<br /><br />
+
+		Base: <br />
+		<input type="text" name="base" value="{base}" class="text" />
+		<br /><br />
+
+		<input type="submit" name="sub1" value="Conectar" />
+	</form>
+	</div>
+
+	<div id="form">
+	<form action="" method="post">
+		Base: <br />
+        <select name="base">
+        	<!-- START BLOCK : bases -->
+        	<option {sel}>{bas}</option>
+            <!-- END BLOCK : bases -->
+        </select>
+		<br /><br />
+		<input type="hidden" name="host" value="{host}" />
+		<input type="hidden" name="user" value="{user}" />
+		<input type="hidden" name="pass" value="{pass}" />
+		<input type="hidden" name="sub1" value="Ok" />
+		<input type="submit" name="sub2" value="Ver Tabs da Base" />
+	</form>
+	</div>
+
+
+	<div id="info">
+	<!-- START BLOCK : selecionar -->
+
+		<h4>Gerar o "Object Relational Mapping"</h4>
+		<form action="execMOR.php" method="post">
+			<select name="tab">
+            	<option value="%">Todas as Tabelas</option>
+				<!-- START BLOCK : tabelas1 -->
+				<option>{tab}</option>
+				<!-- END BLOCK : tabelas1 -->
+			</select>
+			<br />
+			<input type="submit" name="sub" value="Gerar O.R.M." />
+            <input type="checkbox" name="exp" value="sim" /> Exportar?
+			<input type="hidden" name="host" value="{host}" />
+			<input type="hidden" name="user" value="{user}" />
+			<input type="hidden" name="pass" value="{pass}" />
+			<input type="hidden" name="base" value="{base}" />
+		</form>
+
+		<br /><br />
+
+		<h4>Gerar o "Data Access Object"</h4>
+		<form action="execDAO.php" method="post">
+			<select name="tab">
+            	<option value="%">Todas as Tabelas</option>
+				<!-- START BLOCK : tabelas2 -->
+				<option>{tab}</option>
+				<!-- END BLOCK : tabelas2 -->
+			</select>
+			<br />
+			<input type="submit" name="sub" value="Gerar D.A.O." />
+            <input type="checkbox" name="exp" value="sim" /> Exportar?
+			<input type="hidden" name="host" value="{host}" />
+			<input type="hidden" name="user" value="{user}" />
+			<input type="hidden" name="pass" value="{pass}" />
+			<input type="hidden" name="base" value="{base}" />
+		</form>
+
+	<!-- END BLOCK : selecionar -->
+	</div>

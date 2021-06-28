@@ -1,0 +1,110 @@
+/* formatação para TODAS as tags */
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: 14px;
+}
+
+/* organização do layout */
+#all{
+	width: 1300px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+#top{
+	height: 20px;
+	padding: 10px;
+	text-align: right;
+	background-color: #5185A6;
+}
+#top a{
+	font-size: 12px;
+	text-decoration: none;
+	color: #EEEEEE;
+}
+#top a:hover{
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+
+
+#header{
+	height: 50px;
+	padding: 10px;
+	text-align: center;
+	background-color: #FFF;
+}
+
+
+#content{
+	/*height: 300px;  tirar depois */
+	padding: 10px;
+	background-color: #FFFFFF;
+}
+	#form{
+		width: 400px;
+		float: left;
+	}
+	#info{
+		width: 400px;
+		float: left;
+	}
+
+#footer{
+	height: 20px;
+	padding: 10px;
+	text-align: right;
+	background-color: #95452A;
+	color: #EEEEEE;
+}
+#footer a{
+	font-size: 10px;
+	text-decoration: none;
+	color: #EEEEEE;
+}
+#footer a:hover{
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+
+
+/* estilos para uso em tags específicas */
+.limpar_flutuacao{
+	clear: both;
+}
+
+
+/* formatação para outras tags do HTML */
+html{
+	overflow: -moz-scrollbars-vertical; /*so para mozila*/
+	overflow-y: scroll;
+}
+body{
+	background-color: #1C4859;
+}
+h1{
+	font-family: Playball;
+	font-size: 32px;
+	margin-bottom: 15px;
+}
+h2{
+	font-size: 26px;
+	margin-bottom: 10px;
+}
+h3{
+	font-size: 21px;
+	margin-bottom: 10px;
+}
+input, textarea, select{
+	padding: 5px;
+	border-color: #333;
+	border-style: solid;
+	border-width: 1px;
+}
+input.text{
+	width: 300px;
+}
